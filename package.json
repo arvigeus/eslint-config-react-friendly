@@ -7,6 +7,13 @@
     "url": "git+https://github.com/arvigeus/eslint-config-react-friendly.git"
   },
   "license": "MIT",
+  "keywords": [
+    "eslint",
+    "react",
+    "airbnb",
+    "typescript",
+    "flow"
+  ],
   "main": "index.js",
   "files": [
     ".eslintrc.js",
