@@ -1,0 +1,30 @@
+{
+  "name": "eslint-config-react-friendly",
+  "version": "1.0.0",
+  "description": "Helps you write a better code without getting in your way",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvigeus/eslint-config-react-friendly.git"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint": "^5.x"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "1.x",
+    "@typescript-eslint/parser": "1.x",
+    "babel-eslint": "10.x",
+    "eslint": "5.x",
+    "eslint-config-react-app": "4.0.0",
+    "eslint-plugin-flowtype": "2.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "1.x",
+    "typescript": "^3.4.5"
+  },
+  "devDependencies": {
+    "prettier": "1.17.0"
+  }
+}
