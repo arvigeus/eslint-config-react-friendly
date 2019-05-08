@@ -130,6 +130,31 @@ module.exports = {
       }
     ],
 
+    "no-restricted-imports": [
+      "warn",
+      {
+        paths: [
+          {
+            name: "@emotion/styled",
+            message: "Please import from @emotion/styled/macro."
+          },
+          {
+            name: "styled-components",
+            message: "Please import from styled-components/macro."
+          },
+          {
+            name: "styled-jsx",
+            message: "Please import from styled-jsx/macro/macro."
+          }
+        ],
+        patterns: [
+          "!@emotion/styled/macro",
+          "!styled-components/macro",
+          "!styled-jsx/macro"
+        ]
+      }
+    ],
+
     // disallow specified syntax
     // https://eslint.org/docs/rules/no-restricted-syntax
     "no-restricted-syntax": ["warn", "ForInStatement", "WithStatement"],
