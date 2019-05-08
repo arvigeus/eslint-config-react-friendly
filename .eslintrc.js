@@ -28,7 +28,9 @@ module.exports = {
         ]
       }
     ],
+
     // specify the maximum cyclomatic complexity allowed in a program
+    // https://eslint.org/docs/rules/complexity
     complexity: ["warn", 11],
 
     // verify super() callings in constructors
@@ -109,9 +111,8 @@ module.exports = {
     // https://eslint.org/docs/rules/no-nested-ternary
     "no-nested-ternary": "warn",
 
-    // disallow reassignment of function parameters
-    // disallow parameter object manipulation except for specific exclusions
-    // rule: https://eslint.org/docs/rules/no-param-reassign.html
+    // disallow reassignment of function parameters except for specific exclusions
+    // https://eslint.org/docs/rules/no-param-reassign.html
     "no-param-reassign": [
       "warn",
       {
@@ -130,6 +131,8 @@ module.exports = {
       }
     ],
 
+    // prefer using macros
+    // https://eslint.org/docs/rules/no-restricted-imports
     "no-restricted-imports": [
       "warn",
       {
