@@ -188,13 +188,6 @@ module.exports = {
     // https://eslint.org/docs/rules/no-unsafe-negation
     "no-unsafe-negation": "warn",
 
-    // disallow declaration of variables that are not used in the code
-    // https://eslint.org/docs/rules/no-unused-vars
-    "no-unused-vars": [
-      "warn",
-      { vars: "all", args: "after-used", ignoreRestSiblings: true }
-    ],
-
     // disallow redundant return; keywords
     // https://eslint.org/docs/rules/no-useless-return
     "no-useless-return": "warn",
