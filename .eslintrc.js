@@ -1,8 +1,12 @@
 const macros = require("./macros");
 
 module.exports = {
-  extends: ["react-app", "plugin:jsx-a11y/recommended"],
-  plugins: ["import", "jsx-a11y"],
+  extends: [
+    "react-app",
+    "plugin:jsx-a11y/recommended",
+    "plugin:jest/recommended"
+  ],
+  plugins: ["import", "jsx-a11y", "jest"],
   settings: {
     "import/resolver": {
       node: {
