@@ -18,7 +18,7 @@ const macros = {
     },
     {
       name: "styled-jsx",
-      message: "Prefer using styled-jsx/macro/macro"
+      message: "Prefer using styled-jsx/macro"
     }
   ],
   patterns: [
