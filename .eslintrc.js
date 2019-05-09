@@ -1,3 +1,5 @@
+const macros = require("./macros");
+
 module.exports = {
   extends: ["react-app", "plugin:jsx-a11y/recommended"],
   plugins: ["import", "jsx-a11y"],
@@ -133,30 +135,7 @@ module.exports = {
 
     // prefer using macros
     // https://eslint.org/docs/rules/no-restricted-imports
-    "no-restricted-imports": [
-      "warn",
-      {
-        paths: [
-          {
-            name: "@emotion/styled",
-            message: "Please import from @emotion/styled/macro."
-          },
-          {
-            name: "styled-components",
-            message: "Please import from styled-components/macro."
-          },
-          {
-            name: "styled-jsx",
-            message: "Please import from styled-jsx/macro/macro."
-          }
-        ],
-        patterns: [
-          "!@emotion/styled/macro",
-          "!styled-components/macro",
-          "!styled-jsx/macro"
-        ]
-      }
-    ],
+    "no-restricted-imports": ["warn", macros],
 
     // disallow specified syntax
     // https://eslint.org/docs/rules/no-restricted-syntax
