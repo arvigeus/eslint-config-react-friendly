@@ -347,9 +347,12 @@ module.exports = {
             "getInitialState",
             "state",
             "getChildContext",
+            "getDerivedStateFromProps",
             "componentDidMount",
             "shouldComponentUpdate",
+            "getSnapshotBeforeUpdate",
             "componentDidUpdate",
+            "componentDidCatch",
             "componentWillUnmount"
           ],
           rendering: ["/^render.+$/", "render"]
