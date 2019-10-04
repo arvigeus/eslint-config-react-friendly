@@ -3,6 +3,7 @@ const macros = require("./macros");
 module.exports = {
   extends: [
     "react-app",
+    "plugin:import/typescript",
     "plugin:jsx-a11y/recommended",
     "plugin:jest/recommended"
   ],
